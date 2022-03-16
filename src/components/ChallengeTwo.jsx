@@ -30,8 +30,10 @@ function ChallengeTwo() {
       }
       return array;
     }
-    shuffleArry = shuffle(studentList);
+    // shuffleArry = shuffle(studentList);
+    shuffleArry = [...shuffle(studentList)];
     setStudents(shuffleArry);
+    console.log(shuffleArry === students);
     console.log(students);
   };
 
